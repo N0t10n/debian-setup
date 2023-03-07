@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Source and destination directories
-SCR_DIR="$(find $HOME -name "terminal-setup" -type d)/fonts"
+SCR_DIR="$(find $HOME -name "debian-setup" -type d)/fonts"
 DEST_DIR="$HOME/.local/share/fonts"
 
 # This functions installs all fonts located at $SCR_DIR or
