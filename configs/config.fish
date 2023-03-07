@@ -2,6 +2,14 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# Greeting message
+function fish_greeting
+	pfetch
+	# neofetch
+end
+
+# Aliases
+alias lt="exa --sort=ext --tree --icons"
 alias ls="exa --sort=ext --icons"
 alias la="exa --sort=ext --icons -a"
 alias lla="exa --sort=ext --icons --sort=ext -al"

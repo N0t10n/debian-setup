@@ -5,6 +5,7 @@ $username\
 [ ](#3AE493)\
 $directory\
 $git_branch\
+$git_status\
 $character\
 """
 
@@ -14,21 +15,19 @@ $memory_usage\
 $conda\
 $python"""
 
-# format symbols [ ]
+# format symbols  
 # accent = "#3AE493"
 
 [character]
 success_symbol = '[❯](bold green)'
 error_symbol = '[❯](bold red)'
-# format = '$symbol '
 
 [cmd_duration]
-style = 'bold red'
 min_time = 500
-format = 'took [$duration]($style) '
+format = '[took](italic white) [$duration](bold italic bright-white) '
 
 [aws]
-symbol = "  "
+symbol = " "
 
 [c]
 symbol = " "
@@ -40,8 +39,9 @@ ignore_base = false
 format = "[$symbol$environment]($style) "
 
 [directory]
+style = "bold italic bright-cyan"
 read_only = " "
-truncation_length = 2
+truncation_length = 3
 truncate_to_repo = true
 truncation_symbol = '.../'
 read_only_style = 'red'
@@ -51,8 +51,15 @@ use_os_path_sep = true
 symbol = " "
 
 [git_branch]
-style = "bold yellow"
+style = "bold purple"
 symbol = " "
+
+[git_status]
+# ahead = '⇡${count}'
+# diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+# behind = '⇣${count}'
+# up_to_date = ''
+format = '[$all_status]($style) '
 
 [lua]
 symbol = " "
