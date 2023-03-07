@@ -1,0 +1,14 @@
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=true
+background-color='rgb(54,54,54)'
+background-transparency-percent=5
+bold-color-same-as-fg=false
+bold-is-bright=true
+cursor-background-color='rgb(123,239,204)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(194,194,194)'
+font='Hack Nerd Font Mono 12'
+palette=['rgb(32,32,32)', 'rgb(252,106,103)', 'rgb(58,228,147)', 'rgb(255,230,101)', 'rgb(116,226,240)', 'rgb(241,136,181)', 'rgb(123,239,204)', 'rgb(194,194,194)', 'rgb(0,0,0)', 'rgb(252,106,103)', 'rgb(58,228,147)', 'rgb(255,230,101)', 'rgb(116,226,240)', 'rgb(241,136,181)', 'rgb(123,239,204)', 'rgb(239,239,239)']
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
