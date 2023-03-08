@@ -12,7 +12,8 @@ end
 alias lt="exa --sort=ext --tree --icons"
 alias ls="exa --sort=ext --icons"
 alias la="exa --sort=ext --icons -a"
-alias lla="exa --sort=ext --icons --sort=ext -al"
+alias ll="exa --sort=ext --icons -l"
+alias lla="exa --sort=ext --icons -al"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
