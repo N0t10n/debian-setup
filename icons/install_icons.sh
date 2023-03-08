@@ -7,5 +7,7 @@ tar -xf Reversal.tar.xz
 
 # Instalation
 sudo mv Reversal/ ~/.local/share/icons
-sudo mv Reversal-dark/ ~/.local/share/icons
 echo "Reversal icons installed succesfully"
+echo ""
+echo "Run $ sudo apt install gnome-tweaks"
+echo "To set the Reversal icons on the Appearance tab"
