@@ -25,4 +25,8 @@ fi
 
 new_list="$front_list'$add_list_id']"                                                    
 dconf write /org/gnome/terminal/legacy/profiles:/list "$new_list"                        
-dconf write /org/gnome/terminal/legacy/profiles:/default "'$add_list_id'" 
+dconf write /org/gnome/terminal/legacy/profiles:/default "'$add_list_id'"
+
+# Add terminal padding
+cp ./configs/gtk.css ~/.config/gtk-3.0/
+echo "Restar terminal to take effect on changes."
