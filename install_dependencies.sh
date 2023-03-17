@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Source path
+SCR_DIR="$(find $HOME -name "debian-setup" -type d)"
+
 # git
 sudo apt-get install git
 echo "git installed"
@@ -30,10 +33,13 @@ if [[ "(y|Y)" =~ $CHOICE ]]; then # Regex expression
 	sha256sum Miniconda3-latest-Linux-x86_64.sh
 	bash Miniconda3-latest-Linux-x86_64.sh
 	rm Miniconda3-latest-Linux-x86_64.sh
+	conda init fish
 	conda update conda
 	echo "Miniconda succesfully installed"
 fi
 
 # starship
 curl -sS https://starship.rs/install.sh | sh
+starship init fish
+cp "$SRC_DIR/configs/starship.toml" ~/.config/
 echo "Starship installed"
